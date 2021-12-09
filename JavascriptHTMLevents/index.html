@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/main.js"></script>
+
+    <script src="js/clone.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="document.getElementById('demo').innerHTML=Date()" id="button">Quel heure est-il ?</button>
+
+    <p id="demo"></p>
+
+    
+    <input type="button" value="YipeekaY" onclick="play()" class="btn btn-outline-danger" id="myButton1">
+    <audio id="audio" src="audio/yeepikay.mp3"></audio>
+
+    
+    <input type="button" value="Click Me" onmouseover="cloneFunction('row1','art', 5)" onmouseout="removeId('art2')" class="btn btn-outline-success" id="myButton2">
+    <div class="container">
+        <div class="row" id="row1">
+            <article class="col-2 text-justify" id="art">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas malesuada varius metus quis venenatis. 
+                Praesent efficitur blandit nibh eu tempor. 
+                Morbi lobortis nulla ut ligula suscipit lacinia. 
+                Duis vehicula elit ac neque fringilla maximus. 
+                <br>                
+            </article>     
+        </div>
+    </div>
+
+</body>
+</html>

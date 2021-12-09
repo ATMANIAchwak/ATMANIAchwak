@@ -1,0 +1,31 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulaire Utilisateur</title>
+<style>.error{color:red}</style>
+</head>
+<body>
+<form:form action="processForm" modelAttribute="personnage" > 
+
+Prénom: <form:input path="prenom" />
+Nom (*): <form:input path="nom"/>
+<form:errors path="nom" cssClass="error"/> 
+ 
+ <br><br>
+
+
+points de vie : <form:input path ="pointDeVie" />
+<form:errors path="pointDeVie" cssClass="error" />
+
+<br> <br>
+Code Postal : <form:input path="codePostal" />
+<form:errors path="codePostal" cssClass="error" /> 
+
+<br> <br>
+
+<input type="submit" value="valider"/>
+</form:form>
+</body>
+</html>
